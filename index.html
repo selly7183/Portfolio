@@ -9,64 +9,148 @@
 			name="'description"
 			content="Portfolio for world-renowned front-end developer SoYeon"
 		/>
-		<link rel="icon" type="image/png" href="img/logo100.png" />
+		<link rel="icon" type="image/png" href="img/favicon.png" />
 		<meta name="author" content="PARK SO YEON" />
 		<script
 			src="https://kit.fontawesome.com/6604f3574d.js"
 			crossorigin="anonymous"
 		></script>
-		<link rel="stylesheet" href="style.css" />
-		<script src="main.js" defer></script>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/layout.css" />
+		<script src="js/main.js" defer></script>
 	</head>
 	<body>
-		<!--Navbar-->
-		<nav id="navbar">
-			<div class="navbar__logo">
-				<a href="#"><img src="img/logo100.png" /></a>
+		<!-- Wrap -->
+		<section id="wrap">
+			<div class="cont">
+				<!--Header-->
+				<header id="header">
+					<div class="header__logo">
+						<a href="#"><img src="img/logo.png" /></a>
+					</div>
+					<button class="home__contact">Contact me</button>
+				</header>
+				<!-- Home -->
+				<section id="home">
+					<h1 class="home__title">PORTFOLIO</h1>
+					<!-- <img src="img/profile.jpg" class="about__avatar" alt="profile" /> -->
+					<h2 class="home_description">
+						Front-End Developer <br />PARK SO YEON
+					</h2>
+
+					<aside>
+						<div class="update">
+							<span>Last updated</span>
+							<span>November, 11 2022</span>
+						</div>
+						<nav class="navbar">
+							<ul class="navbar__menu">
+								<li class="navar__menu__item">Home</li>
+								<li class="navar__menu__item">About</li>
+								<li class="navar__menu__item">Skills</li>
+								<li class="navar__menu__item">My work</li>
+								<li class="navar__menu__item">Careers</li>
+								<li class="navar__menu__item">Contact</li>
+							</ul>
+						</nav>
+						<div class="copy">© SOYEON 2022. All rights reserved.</div>
+					</aside>
+				</section>
 			</div>
-			<ul class="navbar__menu">
-				<li class="navar__menu__item">Home</li>
-				<li class="navar__menu__item">About</li>
-				<li class="navar__menu__item">Skills</li>
-				<li class="navar__menu__item">My work</li>
-				<li class="navar__menu__item">Careers</li>
-				<li class="navar__menu__item">Contact</li>
-			</ul>
-		</nav>
-		<!-- Home -->
-		<section id="home">
-			<h1 class="home_title">PORTFOLIO</h1>
-			<h2 class="home_description">Hello, <br />I'm Front-end Developer.</h2>
-			<button class="home__contact">Contact me</button>
 		</section>
+
 		<!-- About -->
 		<section id="about">
-			<h1>About me</h1>
-			<p>
-				웹에이전시에서 1년의 경력을 가지고 있는 열정 넘치는 프론트엔드 개발자
-				박소연입니다. <br />
-				다수의 웹/반응형 홈페이지 구축, 고도몰을 이용한 이커머스 구축 등
-				다양하고 풍부한 경험을 가지고 있습니다.<br />
-				지속 가능하고, 성능 향상을 위해 끊임없이 노력하고 발전하는 프론트엔드
-				개발자가 되겠습니다.
-			</p>
-			<img src="img/profile.jpg" class="about__avatar" alt="profile" />
-			<div class="about__majors">
-				<div class="major"></div>
-				<div class="major__icon"></div>
-				<div class="major__title"></div>
-				<div class="major__description"></div>
-			</div>
-			<div class="about__jobs">
-				<div class="job">
-					<img src="" alt="" class="job__logo" />
-					<p class="job__name"></p>
-					<p class="job__period"></p>
-				</div>
-				<div class="job">
-					<img src="" alt="" class="job__logo" />
-					<p class="job__name"></p>
-					<p class="job__period"></p>
+			<div class="cont__pagew">
+				<h1 class="section__title">
+					<span class="num__color">(01)</span> About me
+				</h1>
+
+				<div class="about__cont">
+					<div class="about__info">
+						<p>
+							웹에이전시에서 1년의 경력을 가지고 있는 열정 넘치는 프론트엔드
+							개발자 박소연입니다. <br />
+							다수의 웹/반응형 홈페이지 구축, 고도몰을 이용한 이커머스 구축 등
+							다양하고 풍부한 경험을 가지고 있습니다.<br />
+							지속 가능하고, 성능 향상을 위해 끊임없이 노력하고 발전하는
+							프론트엔드 개발자가 되겠습니다.
+						</p>
+						<div class="about__majors">
+							<div class="major">
+							  <div class="major__icon">
+								<i class="fa-solid fa-school"></i>
+							  </div>
+							  <h2 class="major__title">Graduation</h2>
+							  <div class="major__description">
+								동서울대학교 <br> 컴퓨터 정보과 (2015)
+							
+							  </div>
+							</div>
+							<div class="major">
+							  <div class="major__icon">
+								<i class="fa-solid fa-graduation-cap"></i>
+							  </div>
+							  <h2 class="major__title">Education</h2>
+							  <p class="major__description">
+								sbs 컴퓨터아카데미 수료(2020.10 - 2021.06)<br>
+								드림코딩 아카데미 - Browser101, React (2022.12) 수료 <br>
+								노마드코더 - JavaScript, React (2022.09) 수료
+							  </p>
+							</div>
+							<div class="major">
+							  <div class="major__icon">
+								<i class="fa-solid fa-clipboard"></i>
+							  </div>
+							  <h2 class="major__title">Certification</h2>
+							  <p class="major__description">
+								정보처리산업기사 (2015.07)<br>
+								웹디자인기능사 (2022.07)<br>
+								GTQ 포토샵 (2022.06)
+							  </p>
+							</div>
+						  </div>
+						  <div class="about__jobs">
+							<div class="job">
+								<img
+								  src="img/jobs/m_logo.png"
+								  alt="뮤자인"
+								  class="job__logo"
+								/>
+								<div class="job__description">
+								  <p class="job__name">
+									뮤자인 (웹 퍼블리셔)
+								  </p>
+								  <p class="job__period">2021.08-2022.08</p>
+								 </div>
+							</div>
+							<div class="job">
+							  <img
+								src="img/jobs/e_logo.png"
+								alt="이스타항공"
+								class="job__logo"
+							  />
+							  <div class="job__description">
+								<p class="job__name">
+								  이스타항공 (객실승무원)
+								</p>
+								<p class="job__period">2018.10 - 2020.10</p>
+							   </div>
+						  </div>
+						  <div class="job">
+							<img
+							  src="img/jobs/s_logo.png"
+							  alt="서울시청"
+							  class="job__logo seoul"
+							/>
+						   <div class="job__description">
+							<p class="job__name">
+							  서울시청 실내공간정보사업 (포토샵, 3d 모델링)
+							</p>
+							<p class="job__period">2017.02 - 2018.10</p>
+						   </div>
+						  </div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -177,14 +261,17 @@
 			</div>
 		</section>
 		<!-- Careers -->
-		<section id="Careers">
+		<section id="Career">
 			<h1>My Career</h1>
 			<h3>Projects</h3>
 		</section>
 		<!-- Contact -->
 		<section id="contact">
 			<h1 class="contact__title">Let's talk</h1>
-			<h2 class="contact__email">selly7183@naver.com</h2>
+			<h2 class="contact__email">
+				<i class="fa-regular fa-envelope"></i>
+				selly7183@naver.com
+			</h2>
 			<div class="contact__link">
 				<a href="https://github.com/selly7183" target="_blank">
 					<i class="fab fa-github"></i>

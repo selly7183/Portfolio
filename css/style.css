@@ -1,0 +1,163 @@
+/* wrap */
+#wrap {
+	height: 100vh;
+}
+.cont {
+	margin: 2rem auto;
+	background: url("../img/background.png") no-repeat center/cover;
+	border-radius: 1.5rem;
+	width: calc(100% - 4rem);
+	height: calc(100% - 4rem);
+}
+
+/* header */
+#header {
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+}
+#header .header__logo img {
+	width: 60px;
+}
+
+/* home */
+#home {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 100%;
+}
+.home__title {
+	font-size: var(--font-xl);
+	color: var(--color-navy);
+	letter-spacing: 10px;
+}
+.home_description {
+	color: var(--color-navy);
+	font-size: var(--font-large);
+	margin-top: -100px;
+}
+
+/* aside */
+aside {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 0 2rem;
+	font-size: var(--font-small);
+	color: var(--color-navy);
+}
+.navbar {
+	border-radius: 1.2rem;
+	padding: 0 1.5rem;
+	box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+	backdrop-filter: blur(12px);
+	scroll-behavior: smooth;
+}
+.navbar__menu {
+	display: flex;
+	gap: 20px;
+}
+.navar__menu__item {
+	opacity: 0.7;
+	position: relative;
+	cursor: pointer;
+	font-size: var(--font-regular);
+	transition: all 0.3s ease;
+}
+.navar__menu__item:hover {
+	opacity: 1;
+	font-weight: var(--weight-semi-bold);
+}
+.navar__menu__item::after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	background: #fff;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.navar__menu__item:hover::after {
+	opacity: 1;
+	width: 100%;
+}
+
+/* about */
+#about {
+	height: 100vh;
+}
+.about__info {
+	margin-top: 30px;
+}
+.about__majors {
+	display: flex;
+	justify-content: space-between;
+	gap: 150px;
+	margin: 80px 0;
+}
+
+.major__icon {
+	width: 170px;
+	height: 170px;
+	line-height: 170px;
+	font-size: 70px;
+	margin: auto;
+	color: var(--color-blue);
+	border: 1px solid var(--color-blue);
+	border-radius: 50%;
+	margin-bottom: 16px;
+}
+
+.major__icon i {
+	transition: all var(--animation-duration) ease;
+}
+
+.major__icon:hover i {
+	color: var(--color-pink);
+	transform: rotate(-30deg) scale(1.1);
+}
+
+.major__title,
+.major__description {
+	color: var(--color-dark-grey);
+}
+
+.major__description {
+	font-size: var(--font-small);
+}
+
+.job {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.job__description {
+	margin: 0 16px;
+	text-align: left;
+}
+
+.job__name,
+.job__period {
+	color: var(--color-light-grey);
+}
+
+.job__name {
+	font-size: var(--font-small);
+}
+
+.job__period {
+	font-size: var(--font-micro);
+}
+.job__logo {
+	width: 85px;
+}
+.job__logo.seoul {
+	width: 35px;
+	margin-right: 50px;
+}
