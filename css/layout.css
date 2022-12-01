@@ -106,4 +106,15 @@ p {
 	color: var(--color-black);
 	line-height: 1.4;
 	margin: 4px 0;
+	word-break: keep-all;
+}
+
+@media screen and (max-width: 768px) {
+	:root {
+		--font-large: 30px;
+		--font-medium: 25px;
+		--font-regular: 16px;
+		--font-small: 14px;
+		--font-micro: 12px;
+	}
 }
