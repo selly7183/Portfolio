@@ -9,20 +9,23 @@
 
 /* header */
 #header {
-	padding-top: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+	backdrop-filter: blur(12px); */
+}
+.header__cont {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 #header .header__logo img {
 	width: 60px;
+	margin-top: 10px;
 }
 .navbar {
-	border-radius: 1.2rem;
-	padding: 0 1.5rem;
-	box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
-	backdrop-filter: blur(12px);
-	scroll-behavior: smooth;
+	padding: 0 1rem;
 }
 .navbar__menu {
 	display: flex;
