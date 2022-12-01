@@ -37,3 +37,9 @@ function scrollTo(selector) {
 		behavior: "smooth",
 	});
 }
+
+// scrollTop
+const scrollTop = document.querySelector(".scroll__top");
+scrollTop.addEventListener("click", () => {
+	scrollTo("#home");
+});
