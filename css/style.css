@@ -1,3 +1,7 @@
+body.on {
+	opacity: 0;
+}
+
 /* wrap */
 #wrap {
 	background: url("../img/bg3.png") no-repeat center/cover;
@@ -418,12 +422,33 @@ aside {
 	transform: scale(1.2) rotate(360deg);
 	color: var(--color-red);
 }
-.scroll__top .btn__default {
+/* .scroll__top .btn__default {
 	display: block;
 	cursor: pointer;
-}
+} */
 br.dis-no.vis-768 {
 	display: none;
+}
+
+/* scroll-top button */
+.scroll__top {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	font-size: 30px;
+	color: var(--color-white);
+	background-color: var(--color-dark-pink);
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	cursor: pointer;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 300ms ease-in;
+}
+.scroll__top.on {
+	opacity: 1;
+	pointer-events: auto;
 }
 
 /* 반응형 */
