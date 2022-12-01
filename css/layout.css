@@ -4,12 +4,16 @@
 :root {
 	/* Color */
 	--color-white: #ffffff;
+	--color-light-white: #eeeeee;
+	--color-dark-white: #bdbdbd;
 	--color-red: #ea4f1b;
+	--color-light-pink: #ffbd45;
 	--color-pink: #fe918d;
 	--color-dark-pink: #ff6863;
+	--color-orange: #feb546;
+	--color-grey: #616161;
 	--color-light-grey: #7c7979;
 	--color-dark-grey: #4d4d4d;
-	--color-gray: #d8d8d8;
 	--color-blue: #73aace;
 	--color-navy: #2f4858;
 	--color-black: #1f1f1f;
@@ -100,5 +104,6 @@ p {
 	font-size: var(--font-regular);
 	font-weight: var(--font-regular);
 	color: var(--color-black);
+	line-height: 1.4;
 	margin: 4px 0;
 }
