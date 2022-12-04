@@ -25,9 +25,9 @@ body.on {
 }
 #header.header--dark {
 	box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
-	background-color: #fff5f2;
-	height: 65px;
-	/* backdrop-filter: blur(12px); */
+	/*background-color: #fff5f2;*/
+	height: 50px;
+	backdrop-filter: blur(12px);
 }
 .header__cont {
 	display: flex;
@@ -35,7 +35,7 @@ body.on {
 	align-items: center;
 }
 #header .header__logo img {
-	width: 60px;
+	width: 50px;
 	margin-top: 10px;
 }
 .navbar {
@@ -49,7 +49,7 @@ body.on {
 	opacity: 0.7;
 	position: relative;
 	cursor: pointer;
-	font-size: var(--font-regular);
+	font-size: 17px;
 	transition: all 0.3s ease;
 }
 .navar__menu__item.active,
@@ -328,8 +328,13 @@ aside {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	opacity: 1;
+	transition: all 300ms ease-out;
 }
-
+.work__projects.anim-out {
+	opacity: 0;
+	transform: scale(0.96) translateY(40px);
+}
 .project {
 	position: relative;
 	display: flex;
@@ -339,8 +344,11 @@ aside {
 	height: 250px;
 	margin: 2px;
 	background-color: var(--color-light-white);
+	display: block;
 }
-
+.project.invisible {
+	display: none;
+}
 .project__img {
 	max-width: 100%;
 	max-height: 100%;
@@ -445,6 +453,9 @@ br.dis-no.vis-768 {
 	opacity: 0;
 	pointer-events: none;
 	transition: opacity 300ms ease-in;
+}
+.scroll__top i {
+	font-size: 25px;
 }
 .scroll__top.on {
 	opacity: 1;

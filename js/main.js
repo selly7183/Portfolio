@@ -44,9 +44,31 @@ document.addEventListener("scroll", () => {
 		scrollTop.classList.remove("on");
 	}
 });
-// handle click on'the scrollTop' button on home
+// handle click on 'the scrollTop' button on home
 scrollTop.addEventListener("click", () => {
 	scrollTo("#home");
+});
+
+// handle click on 'My work' button filter the item
+const workCategory = document.querySelector(".work__categories");
+const projectWork = document.querySelector(".work__projects");
+const projects = document.querySelectorAll(".project");
+workCategory.addEventListener("click", (e) => {
+	const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+	if (filter == null) {
+		return;
+	}
+	projectWork.classList.add("anim-out");
+	setTimeout(() => {
+		projects.forEach((project) => {
+			if (filter === "*" || filter === project.dataset.type) {
+				project.classList.remove("invisible");
+			} else {
+				project.classList.add("invisible");
+			}
+		});
+		projectWork.classList.remove("anim-out");
+	}, 300);
 });
 
 function scrollTo(selector) {
