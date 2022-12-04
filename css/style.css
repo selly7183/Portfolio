@@ -296,13 +296,13 @@ aside {
 	position: relative;
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover {
 	background-color: var(--color-pink);
 	color: var(--color-white);
 }
 
-.category__btn.active .category__count,
+.category__btn.selected .category__count,
 .category__btn:hover .category__count {
 	opacity: 1;
 	top: 5px;
@@ -322,6 +322,7 @@ aside {
 	top: -22px;
 	opacity: 0;
 	transition: all 300ms ease-in;
+	pointer-events: none;
 }
 
 .work__projects {
