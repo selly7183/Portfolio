@@ -133,7 +133,6 @@ function handleResize() {
 			});
 		});
 	}
-	return;
 }
 window.addEventListener("resize", handleResize);
 
@@ -219,8 +218,6 @@ function windowScroll() {
 	imgAni.forEach((item) => {
 		if (item.offsetTop - 500 < document.documentElement.scrollTop) {
 			item.classList.add("img-aniload");
-		} else {
-			item.classList.remove("img-aniload");
 		}
 	});
 }

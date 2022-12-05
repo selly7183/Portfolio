@@ -319,7 +319,7 @@ aside {
 
 /* work */
 #work {
-	padding: 80px 0;
+	padding-top: 80px;
 }
 .work__categories {
 	margin: 40px;
@@ -438,7 +438,7 @@ aside {
 /* career */
 #career {
 	width: 100vw;
-	height: 100vh;
+	height: 90vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
