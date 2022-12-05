@@ -87,6 +87,44 @@ workCategory.addEventListener("click", (e) => {
 	}, 300);
 });
 
+//career mouseover text slide-down
+const careerContBox = document.querySelectorAll(".career__box");
+const careerDescription = document.querySelectorAll(".career__description");
+careerContBox.forEach((box, index) => {
+	box.addEventListener("mouseover", () => {
+		for (let item of careerDescription) {
+			item.classList.remove("slide-down");
+			careerDescription[index].classList.add("slide-down");
+		}
+	});
+	box.addEventListener("mouseleave", () => {
+		box.classList.remove("slide-down");
+	});
+});
+
+//career mouseover image show
+function handleResize() {
+	const width = window.innerWidth;
+	if (width >= 768) {
+		careerContBox.forEach((el) => {
+			const image = el.querySelector("img");
+
+			el.addEventListener("mouseenter", (e) => {
+				gsap.to(image, { autoAlpha: 1 });
+			});
+
+			el.addEventListener("mouseleave", (e) => {
+				gsap.to(image, { autoAlpha: 0 });
+			});
+
+			el.addEventListener("mousemove", (e) => {
+				gsap.set(image, { x: e.offsetX - 150 });
+			});
+		});
+	}
+}
+window.addEventListener("resize", handleResize);
+
 // 1. 모든 섹션 요소들과 메뉴아이템들을 가지고 온다
 // 2. IntersectionObserver를 이용해서 모든 섹션들을 관찰한다
 // 3. 보여지는 섹션에 해당하는 메뉴 아이템을 활성화 시킨다
