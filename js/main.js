@@ -57,6 +57,17 @@ scrollTop.addEventListener("click", () => {
 	scrollTo("#home");
 });
 
+// skill progressbar
+const skill = document.querySelector("#skills");
+const skillHeight = skill.getBoundingClientRect().height;
+document.addEventListener("scroll", () => {
+	if (window.scrollY > skillHeight * 2) {
+		skill.classList.add("on");
+	} else {
+		skill.classList.remove("on");
+	}
+});
+
 // handle click on 'My work' button filter the item
 const workCategory = document.querySelector(".work__categories");
 const projectWork = document.querySelector(".work__projects");
@@ -118,7 +129,7 @@ function handleResize() {
 			});
 
 			el.addEventListener("mousemove", (e) => {
-				gsap.set(image, { x: e.offsetX - 150 });
+				gsap.set(image, { x: e.offsetX - 0 });
 			});
 		});
 	}
