@@ -458,7 +458,7 @@ aside {
 	font-size: var(--font-medium);
 }
 .career__logo {
-	width: 100px;
+	width: 80px;
 }
 .career__description {
 	height: 0;
@@ -488,7 +488,7 @@ aside {
 	position: absolute;
 	content: "";
 	background-color: rgba(0, 0, 0, 1);
-	bottom: 0;
+	bottom: -1px;
 	left: 0;
 	transition: transform 600ms cubic-bezier(0.25, 0, 0.115, 0.995);
 	transform: scale(0, 1);
@@ -511,12 +511,10 @@ aside {
 	pointer-events: none;
 }
 .num {
-	/* color: #a682ff; */
-	color: #f6732c;
+	color: #a682ff;
+	/* color: #f6732c; */
 }
 
-li {
-}
 /* contact */
 #contact {
 	padding: 80px 0;

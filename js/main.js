@@ -116,7 +116,7 @@ careerContBox.forEach((box, index) => {
 //career mouseover image show
 function handleResize() {
 	const width = window.innerWidth;
-	if (width >= 768) {
+	if (width > 768) {
 		careerContBox.forEach((el) => {
 			const image = el.querySelector("img");
 
@@ -133,6 +133,7 @@ function handleResize() {
 			});
 		});
 	}
+	return;
 }
 window.addEventListener("resize", handleResize);
 
@@ -202,3 +203,24 @@ window.addEventListener("wheel", () => {
 	}
 	selectNavItem(navItems[selectedNavIndex]);
 });
+
+// img-ani (bottom-top)
+window.onscroll = function () {
+	windowScroll();
+	window.onscroll = function () {
+		const scrollTop = document.documentElement.scrollTop;
+		if (scrollTop > 50) {
+			windowScroll();
+		}
+	};
+};
+function windowScroll() {
+	const imgAni = document.querySelectorAll(".img-ani");
+	imgAni.forEach((item) => {
+		if (item.offsetTop - 500 < document.documentElement.scrollTop) {
+			item.classList.add("img-aniload");
+		} else {
+			item.classList.remove("img-aniload");
+		}
+	});
+}
