@@ -573,6 +573,7 @@ br.dis-no.vis-768 {
 	pointer-events: none;
 	transition: opacity 300ms ease-in;
 }
+
 .scroll__top:hover {
 	filter: brightness(1.3);
 }

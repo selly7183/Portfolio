@@ -114,9 +114,10 @@ careerContBox.forEach((box, index) => {
 });
 
 //career mouseover image show
-function handleResize() {
-	const width = window.innerWidth;
-	if (width > 768) {
+
+const handleImage = window.matchMedia("(min-width: 768px)");
+function handleResize(handleImage) {
+	if ((handleImage, matchMedia)) {
 		careerContBox.forEach((el) => {
 			const image = el.querySelector("img");
 
@@ -134,7 +135,7 @@ function handleResize() {
 		});
 	}
 }
-window.addEventListener("resize", handleResize);
+handleResize();
 
 // 1. 모든 섹션 요소들과 메뉴아이템들을 가지고 온다
 // 2. IntersectionObserver를 이용해서 모든 섹션들을 관찰한다
