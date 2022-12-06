@@ -114,12 +114,12 @@ careerContBox.forEach((box, index) => {
 });
 
 //career mouseover image show
-
-const handleImage = window.matchMedia("(min-width: 768px)");
+const handleImage = window.matchMedia("(max-width: 768px)");
+const careerTxtBox = document.querySelectorAll(".career__txt__box");
 function handleResize(handleImage) {
 	if ((handleImage, matchMedia)) {
-		careerContBox.forEach((el) => {
-			const image = el.querySelector("img");
+		careerTxtBox.forEach((el) => {
+			const image = el.querySelector(".career__img");
 
 			el.addEventListener("mouseenter", (e) => {
 				gsap.to(image, { autoAlpha: 1 });
@@ -130,7 +130,7 @@ function handleResize(handleImage) {
 			});
 
 			el.addEventListener("mousemove", (e) => {
-				gsap.set(image, { x: e.offsetX - 0 });
+				gsap.set(image, { x: e.offsetX - 100 });
 			});
 		});
 	}
