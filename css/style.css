@@ -454,28 +454,36 @@ aside {
 }
 
 .career__txt__box {
-	font-size: var(--font-medium);
-	width: 90%;
+	width: 95%;
 	display: inline-block;
+	color: var(--color-dark-grey);
 }
-.career__txt__box span {
-	width: 10%;
-}
+
 .career__logo {
-	width: 80px;
+	width: 65px;
 }
+
 .career__description {
 	height: 0;
-	line-height: 50px;
+	margin-left: 45px;
 	overflow: hidden;
 	pointer-events: none;
 	transition: all 0.5s ease-in-out;
 	opacity: 0;
+	font-size: var(--font-regular);
 }
 .career__description.slide-down {
-	height: 50px;
+	height: 100px;
 	opacity: 1;
 	color: var(--color-dark-grey);
+	padding-top: 1.5%;
+}
+.career__description .career__title {
+	color: var(--color-grey);
+}
+.career__description .desc {
+	font-size: var(--font-small);
+	font-weight: 500;
 }
 .career__box {
 	text-align: left;
@@ -504,6 +512,11 @@ aside {
 .career__box:hover::after {
 	transform: scale(1, 1);
 }
+.career__box a {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
 .career__img {
 	position: absolute;
 	width: 300px;
@@ -517,8 +530,7 @@ aside {
 	pointer-events: none;
 }
 .num {
-	color: #a682ff;
-	/* color: #f6732c; */
+	color: var(--color-pink);
 }
 
 /* contact */
@@ -556,7 +568,7 @@ aside {
 }
 #contact .copy {
 	font-size: var(--font-small);
-	margin-top: 45px;
+	margin-top: 20px;
 }
 
 br.dis-no.vis-768 {
@@ -774,6 +786,16 @@ br.dis-no.vis-768 {
 	}
 	.career__cont {
 		margin-top: 0;
+	}
+	.career__description.slide-down {
+		height: 90px;
+		padding-top: 2%;
+	}
+	.career__description {
+		margin-left: 34px;
+	}
+	.career__txt__box {
+		font-size: 20px;
 	}
 
 	/* contact */
