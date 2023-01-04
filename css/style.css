@@ -472,7 +472,7 @@ aside {
 	font-size: var(--font-regular);
 }
 .career__description.slide-down {
-	height: 100px;
+	padding: 90px 0;
 	opacity: 1;
 	color: var(--color-dark-grey);
 	padding-top: 1.5%;
