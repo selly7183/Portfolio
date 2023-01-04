@@ -103,13 +103,12 @@ const careerContBox = document.querySelectorAll(".career__box");
 const careerDescription = document.querySelectorAll(".career__description");
 careerContBox.forEach((box, index) => {
 	box.addEventListener("mouseover", () => {
-		for (let item of careerDescription) {
-			item.classList.remove("slide-down");
+		for (let i = 0; i < careerContBox.length; i++) {
 			careerDescription[index].classList.add("slide-down");
 		}
 	});
 	box.addEventListener("mouseleave", () => {
-		box.classList.remove("slide-down");
+		careerDescription[index].classList.remove("slide-down");
 	});
 });
 
