@@ -104,6 +104,7 @@ const careerDescription = document.querySelectorAll(".career__description");
 careerContBox.forEach((box, index) => {
 	box.addEventListener("mouseover", () => {
 		for (let i = 0; i < careerContBox.length; i++) {
+			careerContBox[i].classList.remove("slide-down");
 			careerDescription[index].classList.add("slide-down");
 		}
 	});
