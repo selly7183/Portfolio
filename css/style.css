@@ -418,6 +418,7 @@ aside {
 
 .project__description h3 {
 	color: var(--color-orange);
+	text-transform: uppercase;
 }
 .project__description span {
 	color: var(--color-white);
@@ -766,6 +767,9 @@ br.dis-no.vis-768 {
 		width: 20px;
 		height: 20px;
 		line-height: 20px;
+	}
+	.project__description h3 {
+		font-size: var(--font-medium);
 	}
 
 	/* career */
