@@ -217,7 +217,7 @@ window.onscroll = function () {
 function windowScroll() {
 	const imgAni = document.querySelectorAll(".img-ani");
 	imgAni.forEach((item) => {
-		if (item.offsetTop - 500 < document.documentElement.scrollTop) {
+		if (document.documentElement.scrollTop > item.offsetTop - 500) {
 			item.classList.add("img-aniload");
 		}
 	});
