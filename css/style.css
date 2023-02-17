@@ -305,7 +305,7 @@ aside {
 	transition-delay: 0.2s;
 }
 #skills.on .skill__bar .skill__value.n03 {
-	width: 60%;
+	width: 75%;
 	transition-delay: 0.3s;
 }
 #skills.on .skill__bar .skill__value.n04 {
